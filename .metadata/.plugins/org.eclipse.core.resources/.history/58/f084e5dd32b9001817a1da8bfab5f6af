@@ -1,0 +1,6 @@
+package ker.api.apimvcrest.services;
+
+public class CustomerServiceImpl
+{
+
+}

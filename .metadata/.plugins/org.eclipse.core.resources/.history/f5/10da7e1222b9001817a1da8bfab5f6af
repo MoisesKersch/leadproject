@@ -1,0 +1,18 @@
+package ker.api.apimvcrest.domain;
+
+import java.util.Date;
+import javax.persistence.Entity;
+import lombok.Data;
+
+
+@Data
+@Entity(name="person")
+public class Person 
+{
+	@Id
+	@GeneratedValue
+	private Long codigo;
+	private String name;
+	private String lastName;
+	private Date birth;
+}

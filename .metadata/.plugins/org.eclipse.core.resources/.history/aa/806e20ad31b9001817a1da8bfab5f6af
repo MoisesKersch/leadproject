@@ -1,0 +1,5 @@
+package ker.api.apimvcrest.repositories;
+
+public class CustomerRepository extends JpaRepository<Person>{
+
+}

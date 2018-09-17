@@ -1,0 +1,10 @@
+package ker.api.apimvcrest.domain;
+
+import javax.persistence.Entity;
+
+@Data
+@Entity
+public class Customer
+{
+	
+}

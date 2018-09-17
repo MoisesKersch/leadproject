@@ -1,0 +1,24 @@
+package ker.api.apimvcrest.services;
+
+import java.util.List;
+
+import ker.api.apimvcrest.domain.Customer;
+
+public class CustomerServiceImpl implements CustomerService
+{
+
+	@Override
+	public Customer findCustomerById(Long id)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Customer> findAllCustomers()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

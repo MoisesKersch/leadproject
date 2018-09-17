@@ -1,0 +1,7 @@
+package ker.api.apimvcrest.repositories;
+
+import ker.api.apimvcrest.domain.Customer;
+
+public class CustomerRepository extends JpaRepository<Customer>{
+
+}

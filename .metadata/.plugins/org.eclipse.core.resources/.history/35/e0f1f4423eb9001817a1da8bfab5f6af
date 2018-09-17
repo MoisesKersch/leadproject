@@ -1,0 +1,39 @@
+package ker.api.apimvcrest.controllers;
+
+import java.util.List;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import ker.api.apimvcrest.domain.Customer;
+import ker.api.apimvcrest.services.CustomerService;
+
+@RestController
+@RequestMapping(CustomerControler.BASE_URL)
+public class CustomerControler
+{
+	public static final String BASE_URL = "/api/v1/customers";
+
+	private final CustomerService customerService;
+
+	public CustomerControler(CustomerService customerService)
+	{
+		this.customerService = customerService;
+	}
+	
+	@GetMapping
+	List<Customer> getAllCustomers()
+	{
+		return customerService.findAllCustomers();
+	}
+	
+	@Configuration
+    static class WebSecurityConfig extends WebSecurityConfigurerAdapter{
+        @Override
+        public void configure(WebSecurity web) throws Exception {
+             web.ignoring().antMatchers("/**");
+        }
+    }
+}

@@ -1,0 +1,8 @@
+package ker.api.apimvcrest.domain;
+
+public class Person 
+{
+	private String name;
+	private String lastName;
+	private Date birth;
+}

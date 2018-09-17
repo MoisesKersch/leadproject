@@ -1,0 +1,6 @@
+package ker.api.apimvcrest.services;
+
+public interface CustomerService
+{
+	Customer findCustomerById(Long id);
+}

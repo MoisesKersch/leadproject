@@ -1,0 +1,14 @@
+package ker.api.apimvcrest.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import ker.api.apimvcrest.services.CustomerService;
+
+@RestController
+public class CustomerControler
+{
+	public CustomerControler(CustomerService customerService)
+	{
+		
+	}
+}

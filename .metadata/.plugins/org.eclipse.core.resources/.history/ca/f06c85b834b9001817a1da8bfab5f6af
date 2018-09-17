@@ -1,0 +1,24 @@
+package ker.api.apimvcrest.controllers;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import ker.api.apimvcrest.domain.Customer;
+import ker.api.apimvcrest.services.CustomerService;
+
+@RestController
+public class CustomerControler
+{
+	private final CustomerService customerService;
+	
+	public CustomerControler(CustomerService customerService)
+	{
+		this.customerService = customerService;
+	}
+	
+	 List<Customer> getAllCustomers()
+	 {
+		 return customerService.findAllCustomers();
+	 }
+}

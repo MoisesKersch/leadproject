@@ -1,0 +1,5 @@
+package ker.api.apimvcrest.domain;
+
+public class Customer {
+
+}
